@@ -2,3 +2,35 @@
 2. What does fast-forward in git mean?
 3. Why should youhavedifferent branches?
 4. In a project how many remote Git repositories do you usually have?
+
+
+1. gitignore file is added to inform git which files to ignore when performing commit to the github repository.
+   gitignore for java:
+	# Compiled class file
+	*.class
+
+	# Log file
+     	*.log
+
+	# BlueJ files
+	*.ctxt
+
+	# Mobile Tools for Java (J2ME)
+	.mtj.tmp/
+
+	# Package Files #
+	*.jar
+	*.war
+	*.nar
+	*.ear
+	*.zip
+	*.tar.gz
+	*.rar
+
+        # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+        hs_err_pid*
+2. In fast-forward merge, git simply moves the source branch pointer to the target branch pointer without creating an extra merge commit. This can be only done when there is a direct linear path from the source branch to the target branch. 
+
+3. Branching allows each developer to branch out from the original code base and isolate their work from others. Branches give you the freedom to independently work on different modules and merge the modules when you finish developing them. 
+
+4. In a project, I usually have one remote Git repository
